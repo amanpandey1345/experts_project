@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+{% block content %}
+{% load static %}
+<div class="container-fluid text-justify" id="coursesection">
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <h2>Learning is better with Experts Developers </h2>
+            <h4>Full Stack Web Development Course — MERN Stack</h4>
+            <p>for Beginners and Experienced Learners</p>
+            <p>Launch your career in Web Development
+                Earn ₹ 3-8 LPA at leading companies
+                Pay us after you land your dream job
+            </p>
+
+            <p class="text-center p-1">
+            <a href="#"><button class="btn btn-info"> Register </button></a>
+            <a href="#"><button class="btn btn-primary"> Free Demo</button></a>
+            </p>
+            <hr>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 text-center">
+            <img src="{% static 'images/course-img.jpg' %}" alt="course img">
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock  %}

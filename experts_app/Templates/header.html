@@ -1,0 +1,17 @@
+
+
+<nav class="navbarr">
+    <span class='navbarLogo'> Experts Developers </span>
+    <span class='logo' id="logoClass"> <i class="fa-solid fa-bars" onclick="mobileMenuShow()"></i>  </span>
+    <div class='mobileNavLink' >
+        <ul class='navLink' id="myDIV">
+            <i id="hide"class="fa-solid fa-chevron-up" onclick="mobileMenuHide()" ></i> <br> 
+            <a href=" {% url 'homesection' %} "> <li>   Home </li> </a>
+            <a href="{% url 'courses' %}"> <li>  Courses </li> </a>
+            <a href="{% url 'registration' %}"> <li>  Registration </li> </a>
+            <a href="{% url 'homesection' %}"> <li>   About </li> </a>
+            <a href="{% url 'enquiry' %}"> <li>   Enquiry </li> </a>
+        </ul>
+    </div>
+</nav>
+

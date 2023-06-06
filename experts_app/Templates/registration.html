@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block content %}
+<div id="registrationsection">
+  <center>
+    
+    {% if messages %}
+      {% for message in messages %}
+      <h2 {% if message.tags %} class="{{message.tags}}" {% endif %}>{{message}} </h2>    
+      {% endfor %}
+    {% endif %}
+    
+    <form action="/registration/" method="POST" id="registration-form" novalidate>
+      {% csrf_token %} 
+          <br> <h2>Registration Form</h2> <br>
+            {{registrationForm.as_p}}  <br>  
+           <input type="submit"  value="Register" class="btn btn-success" id="subbtn"> <br> <br>
+        </form>
+  </center>
+</div>
+{% endblock %}

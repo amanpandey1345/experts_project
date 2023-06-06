@@ -1,0 +1,49 @@
+
+{% extends 'index.html' %}
+{% block content %}
+
+{% load static %}
+<div class="container-fluid text-center" id="homesection">
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <h3 class="mt-5">Be a Experts Developers</h3>
+            <h4>Our Target is to Produce Experts Developers Not only Job Ready Developers.</h4> <br>
+            <a href="{% url 'registration' %}"><button class="btn btn-info">Enroll Now</button></a>
+        </div>
+
+        <div class="col-12 col-md-5">
+            <img src=" {% static 'images/homesection.png' %}"  alt="home images">
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid text-center" id="homesection2">
+    <div class="row justify-content-center">
+        <div class="col-12 col-md-6" id="sec">
+            <h5 class="text-center">Why Join Us</h5> <br>
+            <h4>Are You Interested in Developement. <br> So You Can Join us and Then you can become a developers. </h4>
+            <h4>Great students deserve the best jobs.</h4>
+            <h4>Experts Developers will have help become best developers.</h4> <br>
+        </div> 
+
+        <div class="col-12 col-md-6 d-flex text-center justify-content-center">
+            <section>
+                <h3>Extra Classes</h3>
+            </section>
+            <section>
+                <h3>Live Classes</h3>
+            </section>
+
+            <section>
+                <h3>Doubt Sessions</h3>
+            </section>
+        </div>
+
+    </div>
+</div>
+
+
+{% endblock  %}
+
+
